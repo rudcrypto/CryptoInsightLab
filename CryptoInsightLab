@@ -1,0 +1,26 @@
+# CryptoInsightLab.py
+
+class CryptoInsightLab:
+    def __init__(self, platform_name, analysis_features):
+        self.platform_name = platform_name
+        self.analysis_features = analysis_features
+    
+    def display_platform_info(self):
+        print(f"Platform Name: {self.platform_name}")
+        print("Analysis Features:")
+        for feature in self.analysis_features:
+            print(f"- {feature}")
+
+# Example usage
+if __name__ == "__main__":
+    platform_name = "CryptoInsightLab"
+    analysis_features = [
+        "Real-time market data",
+        "Price predictions and forecasts",
+        "Sentiment analysis on social media",
+        "Fundamental analysis of cryptocurrencies",
+        "Technical analysis tools"
+    ]
+    
+    crypto_insight_lab = CryptoInsightLab(platform_name, analysis_features)
+    crypto_insight_lab.display_platform_info()
